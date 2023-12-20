@@ -3497,23 +3497,20 @@
 </g>
                         </svg>
                     </div>
-	                <div class="card__item-title">
-		                Семейные <br/>ценности
-	                </div>
-<!--                    <div class="card__item-right">-->
-<!--                        <div class="card__item-title">-->
-<!--                            <div class="card__iten-title-wrap">-->
-<!--                                <span class="card__item-title-first">Семейные</span>-->
-<!--                            </div>  -->
-<!--                            <div class="card__iten-title-wrap">-->
-<!--                                <span class="card__item-title-second">ценности</span> -->
-<!--                            </div>     -->
-<!--                        </div>-->
+                    <div class="card__item-right">
+                        <div class="card__item-title">
+                            <div class="card__iten-title-wrap">
+                                <span>Семейные</span>
+                            </div>
+                            <div class="card__iten-title-wrap">
+                                <span>ценности</span>
+                            </div>
+                        </div>
 
-<!--                        <div class="card__item-descr">-->
-<!--                            Раздел в разработке-->
-<!--                        </div>-->
-<!--                    </div>-->
+                        <div class="card__item-descr">
+                            Раздел в разработке
+                        </div>
+                    </div>
                     <svg class="card__item-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M0.526954 0H18L18 17.473H15.5521L15.5521 4.17889L1.73095 18L0 16.269L13.8211 2.44794L0.526954 2.44794L0.526954 0Z" fill="#D3D3D3"/>
                     </svg>
@@ -3548,32 +3545,32 @@
         gap: 1.125rem;
         align-items: center;
         border-radius: 1.5rem;
-        color: var(--qiwifffff, #FFF);
+        color: #FFF;
         transition: background .4s cubic-bezier(0.33,1,0.68,1);
     }
 
     .card__item_orange {
-        background: var(--qiwiff-8100, #FF8100);
+        background: #FF8100;
     }
 
     .card__item_green {
-        background: var(--qiwi-0-fb-550, #0FB550);
+        background: #0FB550;
     }
 
     .card__item_purple {
-        background: var(--qiwi-8056-d-4, #8056D4);
+        background: #8056D4;
     }
 
     .card__item_blue {
-        background: var(--qiwi-45-b-5-eb, #45B5EB);
+        background: #45B5EB;
     }
 
     .card__item_pink {
-        background: var(--qiwid-92-f-73, #D92F73);
+        background: #D92F73;
     }
 
     .card__item_disable {
-        background: var(--qiwif-5-f-5-f-5, #F5F5F5);
+        background: #F5F5F5;
     }
 
     .card__item_orange .card__item-left svg {
@@ -3663,7 +3660,7 @@
         transition: transform .4s cubic-bezier(0.33,1,0.68,1);
     }
 
-    .card__item:hover .card__item-icon {
+    .card__item:hover:not(.card__item_disable) .card__item-icon {
         transform: rotate(45deg);
     }
 
@@ -3713,8 +3710,6 @@
             transform: translate(0px, 0px);
         }
     }
-
-    .card__item_disable:hover .card__item-icon {
-	    transform: unset;
-    }
 </style>
+<script setup>
+</script>
