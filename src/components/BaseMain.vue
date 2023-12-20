@@ -3497,20 +3497,23 @@
 </g>
                         </svg>
                     </div>
-                    <div class="card__item-right">
-                        <div class="card__item-title">
-                            <div class="card__iten-title-wrap">
-                                <span class="card__item-title-first">Семейные</span>
-                            </div>  
-                            <div class="card__iten-title-wrap">
-                                <span class="card__item-title-second">ценности</span> 
-                            </div>     
-                        </div>
+	                <div class="card__item-title">
+		                Семейные <br/>ценности
+	                </div>
+<!--                    <div class="card__item-right">-->
+<!--                        <div class="card__item-title">-->
+<!--                            <div class="card__iten-title-wrap">-->
+<!--                                <span class="card__item-title-first">Семейные</span>-->
+<!--                            </div>  -->
+<!--                            <div class="card__iten-title-wrap">-->
+<!--                                <span class="card__item-title-second">ценности</span> -->
+<!--                            </div>     -->
+<!--                        </div>-->
 
-                        <div class="card__item-descr">
-                            Раздел в разработке
-                        </div>
-                    </div>
+<!--                        <div class="card__item-descr">-->
+<!--                            Раздел в разработке-->
+<!--                        </div>-->
+<!--                    </div>-->
                     <svg class="card__item-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M0.526954 0H18L18 17.473H15.5521L15.5521 4.17889L1.73095 18L0 16.269L13.8211 2.44794L0.526954 2.44794L0.526954 0Z" fill="#D3D3D3"/>
                     </svg>
@@ -3709,5 +3712,9 @@
         to {
             transform: translate(0px, 0px);
         }
+    }
+
+    .card__item_disable:hover .card__item-icon {
+	    transform: unset;
     }
 </style>
